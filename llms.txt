@@ -1,8 +1,8 @@
-# Perry Lei (雷平) · Software Matrix & Product Architecture
+# LEIPING · Software Matrix & Product Architecture
 
 > Canonical Developer Hub: https://leiping.dev
 
-雷平 (Perry Lei) 是一位专注于本地优先安全、深度语言认知、一页纸交互学习与 AI 伴读的独立开发者与系统架构师。
+LEIPING 专注于本地优先安全、深度语言认知、一页纸交互学习与 AI 伴读的独立开发与系统架构。
 
 ## Products Portfolio
 
@@ -23,5 +23,5 @@
   - Platforms: Chrome, Edge, Firefox Extension, Web.
 
 ## Architecture
-- All products are developed and maintained independently by Perry Lei.
+- All products are developed and maintained independently by LEIPING.
 - All product nodes are interconnected via bidirectional canonical dofollow links.
