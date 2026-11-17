@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>leiping.dev 视觉方案三方向评审工作台 · Perry Lei</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #090b0e;
+      color: #e6edf3;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .top-nav {
+      background: #0f1217;
+      border-bottom: 1px solid #1f2530;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo-badge {
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: -0.01em;
+      color: #fff;
+    }
+    .tab-group {
+      display: flex;
+      gap: 0.5rem;
+      background: #090b0e;
+      padding: 0.25rem;
+      border-radius: 8px;
+      border: 1px solid #1f2530;
+    }
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: #8b949e;
+      padding: 0.45rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tab-btn.active {
+      background: #21262d;
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+    .action-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .open-raw-btn {
+      font-size: 0.8125rem;
+      color: #38bdf8;
+      text-decoration: none;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      transition: background 0.15s;
+    }
+    .open-raw-btn:hover {
+      background: rgba(56, 189, 248, 0.1);
+    }
+    .main-view {
+      flex: 1;
+      display: flex;
+      position: relative;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: #000;
+    }
+    .info-bar {
+      background: #0f1217;
+      border-top: 1px solid #1f2530;
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #8b949e;
+    }
+    .info-bar strong {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-nav">
+    <div class="logo-area">
+      <div class="logo-badge">leiping.dev · 视觉三方向评审</div>
+      <span style="font-size: 0.8125rem; color: #8b949e;">拾页 · WordHub · TOTPBOX · CogniSphere (Dofollow 互链)</span>
+    </div>
+
+    <div class="tab-group">
+      <button class="tab-btn active" onclick="switchTab('direction-1-studio-index.html', this, '方向一：Editorial Swiss (经典出版物与工坊档案 · 浅色暖纸底+衬线体)')">
+        方向一：经典出版档案 (浅)
+      </button>
+      <button class="tab-btn" onclick="switchTab('direction-2-digital-bento.html', this, '方向二：Digital Bento (独立创作者深色便当展厅 · Apple设计奖质感)')">
+        方向二：独立工坊便当 (深)
+      </button>
+      <button class="tab-btn" onclick="switchTab('direction-3-cyber-terminal.html', this, '方向三：Obsidian Pulse (先锋黑曜石终端 · Cyber-Luxe控制台)')">
+        方向三：黑曜石终端 (先锋)
+      </button>
+    </div>
+
+    <div class="action-links">
+      <a id="rawLink" href="direction-1-studio-index.html" target="_blank" class="open-raw-btn">在新标签页打开本版 ↗</a>
+    </div>
+  </div>
+
+  <div class="main-view">
+    <iframe id="previewFrame" src="direction-1-studio-index.html"></iframe>
+  </div>
+
+  <div class="info-bar">
+    <div id="dirTitle"><strong>方向一：Editorial Swiss</strong> · 经典出版物与工坊档案 (浅色暖纸底 #f8f6f0 · 优雅衬线 · 人文与工匠气息)</div>
+    <div>100% Dofollow · Schema.org JSON-LD · 移动端完全自适应</div>
+  </div>
+
+  <script>
+    function switchTab(url, btn, desc) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('previewFrame').src = url;
+      document.getElementById('rawLink').href = url;
+      document.getElementById('dirTitle').innerHTML = desc;
+    }
+  </script>
+</body>
+</html>

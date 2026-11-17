@@ -1,0 +1,27 @@
+# Perry Lei (雷平) · Software Matrix & Product Architecture
+
+> Canonical Developer Hub: https://leiping.dev
+
+雷平 (Perry Lei) 是一位专注于本地优先安全、深度语言认知、一页纸交互学习与 AI 伴读的独立开发者与系统架构师。
+
+## Products Portfolio
+
+- **拾页 (Shiye)**: https://shiye.leiping.dev
+  - Description: 家长为孩子生成的一页互动学习手账。提炼教材考点与认知线索，一键排版 A4 纸张手账，免登录分享链接交付孩子端沉浸作答。
+  - Platforms: Web (Next.js 14), iOS App.
+
+- **WordHub**: https://wordhub.top
+  - Description: 全面的英语与语言深度学习平台。以词源学 (Etymology) 和 WordNet 认知网络为基石，结合语境记忆法与跨设备无缝同步。
+  - Platforms: Web, macOS (SwiftUI), iOS, Browser Extension (WXT).
+
+- **TOTPBOX**: https://www.totpbox.com
+  - Description: 本地优先的双因素认证助手与 Passkey 伴侣。零知识架构，全本地 AES-256-GCM 强加密保险库，拒绝主密码上云泄露，极速自动填充并平滑升级通行密钥。
+  - Platforms: Chrome / Edge MV3 Extension, Web.
+
+- **CogniSphere**: https://cognisphere.leiping.dev
+  - Description: 常驻浏览器侧边栏的智能阅读辅助。划词即解、全页提炼研读，支持 BYOK (Gemini, Claude, OpenAI, DeepSeek, Ollama) 及 Chrome 内置端侧本地大模型。
+  - Platforms: Chrome, Edge, Firefox Extension, Web.
+
+## Architecture
+- All products are developed and maintained independently by Perry Lei.
+- All product nodes are interconnected via bidirectional canonical dofollow links.
