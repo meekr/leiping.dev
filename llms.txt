@@ -2,13 +2,17 @@
 
 > Canonical Developer Hub: https://leiping.dev
 
-LEIPING 专注于本地优先安全、深度语言认知、一页纸交互学习与 AI 伴读的独立开发与系统架构。
+LEIPING 专注于本地优先安全、深度语言认知、一页纸交互学习、诗画古诗文研习与 AI 伴读的独立开发与系统架构。
 
 ## Products Portfolio
 
 - **拾页 (Shiye)**: https://shiye.leiping.dev
   - Description: 家长为孩子生成的一页互动学习手账。提炼教材考点与认知线索，一键排版 A4 纸张手账，免登录分享链接交付孩子端沉浸作答。
   - Platforms: Web (Next.js 14), iOS App.
+
+- **青简 (Qingjian)**: https://qingjian.leiping.dev
+  - Description: 面向中小学生与古诗文爱好者的诗画卡牌研习空间。对开册页诗卡、统一宋代院体绢本淡彩插画，免登录即启日课，字解声韵真背成诵。
+  - Platforms: Web (Next.js 16), PWA (离线研习).
 
 - **WordHub**: https://wordhub.top
   - Description: 全面的英语与语言深度学习平台。以词源学 (Etymology) 和 WordNet 认知网络为基石，结合语境记忆法与跨设备无缝同步。
